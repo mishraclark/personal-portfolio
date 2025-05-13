@@ -1,6 +1,6 @@
 export default function Header() {
     return (
-        <div className="flex justify-center md:justify-between w-full items-center px-5 md:px-16 min-[1400px]:px-32 z-20">
+        <div className="flex justify-center md:justify-between w-full items-center">
             <span className="max-[768px]:hidden text-3xl font-bold text-white">
                 Mishra
             </span>

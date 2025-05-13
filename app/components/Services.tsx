@@ -5,7 +5,7 @@ import ServicePanel from "~/components/ServicePanel";
 
 export default function Services() {
     return (
-        <div className="flex flex-col lg:flex-row w-full px-5 mt-10 md:px-16 min-[1400]:px-32 lg:mt-[150px] gap-x-20 gap-y-6 justify-center items-center">
+        <div className="flex flex-col lg:flex-row w-full mt-10 lg:mt-[150px] gap-x-20 gap-y-6 justify-center items-center">
             <div className="flex flex-col text-center">
                 <div className="text-white text-3xl md:text-6xl">
                     My Services

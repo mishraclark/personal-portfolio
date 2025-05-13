@@ -4,8 +4,8 @@ import IntroBlock from "~/components/IntroBlock";
 
 export default function Intro() {
     return (
-        <div className="flex flex-col z-20">
-            <div className="flex lg:max-xl:flex-col md:max-lg:flex-row md:mt-[92px] min-[1400px]:px-32 md:px-16 px-5 justify-between">
+        <div className="flex flex-col">
+            <div className="flex lg:max-xl:flex-col md:max-lg:flex-row md:mt-[92px] justify-between">
                 <div className="flex max-[1400px]:flex-col">
                 <div className="flex flex-col mt-8 md:mt-16 z-100 text-center items-center md:items-start md:text-left">
                     <div className="text-xl md:text-4xl text-zinc-400">
@@ -31,12 +31,12 @@ export default function Intro() {
                     </div>
                 </div>
 
-                    <div className="min-[1400px]:right-[400px] md:hidden lg:flex lg:absolute right-16 md:w-[510px] max-[768px]:mt-8 overflow-clip rounded-3xl">
+                    <div className="min-[1400px]:right-[380px] md:hidden lg:flex lg:absolute right-16 md:w-[510px] max-[768px]:mt-8 overflow-clip rounded-3xl">
                         <img src={portrait} alt="portrait" className="object-cover" />
                     </div>
                 </div>
 
-                <div className="absolute max-[1400px]:opacity-0 md:max-lg:opacity-100 right-16 flex-col text-right items-end mt-4 flex">
+                <div className="absolute max-[1400px]:opacity-0 md:max-lg:opacity-100 right-16 min-[1400px]:right-32 flex-col text-right items-end mt-4 flex">
                     <IntroBlock title="Years of experience" subTitle="4+" className="items-end" />
 
                     <IntroBlock title="Features Delivered" subTitle="1000+" className="md:mt-20 items-end" />
