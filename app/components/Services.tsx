@@ -19,7 +19,7 @@ export default function Services() {
 
             <div className="flex flex-col gap-y-7 max-[1440px]:w-full">
                 <ServicePanel title="Website Design" img={webDesign} />
-                <ServicePanel title="Application Design" img={appDesign} />
+                <ServicePanel title="Mobile Applications" img={appDesign} />
                 <ServicePanel title="Blockchain Integration" img={blockchain} />
             </div>
 

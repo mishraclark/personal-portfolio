@@ -1,5 +1,6 @@
 import arrowRight from '~/assets/arrow-right.svg'
 import simpleProducts from '~/assets/simple-products.png'
+import { Link } from "react-router";
 
 export default function Contact() {
     return (
@@ -9,13 +10,15 @@ export default function Contact() {
                 Want to make an awesome and impactful product?
             </div>
 
-            <div className="flex items-center gap-x-10 mt-20">
-                <div className="border-b border-amber-200 py-2">
-                    <div className="text-amber-200 text-2xl">Contact Me</div>
-                </div>
+            <Link to="/contact">
+                <div className="flex items-center gap-x-10 mt-20">
+                    <div className="border-b border-amber-200 py-2">
+                        <div className="text-amber-200 text-2xl">Contact Me</div>
+                    </div>
 
-                <img src={arrowRight} alt="arrow-right" className="size-8" />
-            </div>
+                    <img src={arrowRight} alt="arrow-right" className="size-8" />
+                </div>
+            </Link>
         </div>
         <div className="min-[1400px]:h-[580px] max-md:mt-10 rounded-3xl overflow-clip flex">
             <img src={simpleProducts} alt="" className="object-cover" />

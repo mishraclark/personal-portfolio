@@ -1,6 +1,7 @@
 import portrait from "~/assets/portrait.jpeg";
 import arrowRight from '~/assets/arrow-right.svg'
 import IntroBlock from "~/components/IntroBlock";
+import { Link } from "react-router";
 
 export default function Intro() {
     return (
@@ -24,11 +25,12 @@ export default function Intro() {
                         exciting projects using modern technologies. Whether you're interested in launching a new product or
                         redesigning an existing one, I'm happy to help.
                     </div>
-
-                    <div className="text-amber-200 text-xl mt-8 md:mt-15 flex items-center cursor-pointer">
-                        <span>Let's talk</span>
-                        <img src={arrowRight} className="size-[24px] ml-20" />
-                    </div>
+                    <Link to="/contact">
+                        <div className="text-amber-200 text-xl mt-8 md:mt-15 flex items-center cursor-pointer">
+                            <span>Let's talk</span>
+                            <img src={arrowRight} className="size-[24px] ml-20" />
+                        </div>
+                    </Link>
                 </div>
 
                     <div className="min-[1400px]:right-[380px] md:hidden lg:flex lg:absolute right-16 md:w-[510px] max-[768px]:mt-8 overflow-clip rounded-3xl">
