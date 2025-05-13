@@ -53,7 +53,7 @@ export default function ContactForm() {
           <input type="text" className="bg-white rounded-2xl mt-2 py-4 px-6 w-full" onChange={updateEmail} value={email} />
           <div className="text-3xl text-white mt-10">Details</div>
           <textarea className="bg-white rounded-2xl mt-2 w-full py-4 px-6 h-50" onChange={updateDetails} value={details}/>
-          <button type="submit" className={`flex text-white bg-slate-600 rounded-4xl w-full mt-10 cursor-pointer py-3 justify-center justify-self-center select-none ${
+          <button type="submit" className={`flex text-white bg-blue-700 rounded-4xl w-full mt-10 cursor-pointer py-3 justify-center justify-self-center select-none ${
               !canSubmit ? 'opacity-50 pointer-events-none' : ''
           }`
           } >
