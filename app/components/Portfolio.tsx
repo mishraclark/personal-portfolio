@@ -6,6 +6,7 @@ import mapPins from "~/assets/map-pins.png";
 import calaxyProfile from "~/assets/calaxy-profile.png";
 import calaxyFeed from "~/assets/calaxy-feed.png";
 import riverPortfolio from "~/assets/river-portfolio.png";
+import { Link } from 'react-router'
 
 export default function Portfolio() {
     return (
@@ -13,13 +14,16 @@ export default function Portfolio() {
             <div className="absolute inset-0 bg-slate-950 opacity-60"></div>
             <div className="flex-col z-30">
                 <div className="flex justify-between items-center">
-                    <div className="flex text-white text-3xl md:text-6xl font-bold">
+                    <div className="flex text-white text-2xl sm:text-3xl md:text-6xl font-bold">
                         My Portfolio
                     </div>
-                    <div className="flex gap-6">
-                        <div className="text-xl text-amber-200">See All</div>
+                <Link to="/portfolio">
+                    <div className="flex border gap-x-2 sm:gap-x-6 items-center">
+                        <div className="sm:text-2xl text-lg text-amber-200">See All</div>
                         <img src={arrowRight} alt="arrow-right" className="size-6" />
                     </div>
+                </Link>
+
                 </div>
 
                 <div className="md:grid max-[1400px]:grid-cols-2 min-[1440px]:grid-cols-3 gap-10 mt-10">
