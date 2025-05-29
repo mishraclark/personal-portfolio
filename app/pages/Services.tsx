@@ -10,13 +10,14 @@ export default function Services() {
         <Page children={
             <>
                 <img src={simpleScalable} className="absolute -left-1 scale-105 w-max top-30 md:top-40 lg:top-50 -z-1 transform -rotate-3" />
-                <div className="flex flex-col text-white md:text-3xl xl:text-6xl gap-y-8 md:gap-y-12 xl:gap-y-20 mt-36 md:mt-70 lg:mt-100 xl:mt-[450px] w-1/2 justify-self-end">
-                    <div className="self-end">Effective</div>
+                <div className="w-full justify-end flex">
+                    <div className="flex flex-col text-white md:text-3xl xl:text-6xl gap-y-8 md:gap-y-12 xl:gap-y-20 mt-36 md:mt-70 lg:mt-100 xl:mt-[450px] w-1/2">
+                        <div className="self-end">Effective</div>
 
-                    <div className="self-center">Scalable</div>
+                        <div className="self-center">Scalable</div>
 
-                    <div>Simple</div>
-
+                        <div>Simple</div>
+                    </div>
                 </div>
 
                 <div className="text-white text-center xl:text-2xl mt-16 md:mt-32 lg:mt-46">

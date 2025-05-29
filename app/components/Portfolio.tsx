@@ -18,7 +18,7 @@ export default function Portfolio() {
                         My Portfolio
                     </div>
                 <Link to="/portfolio">
-                    <div className="flex border gap-x-2 sm:gap-x-6 items-center">
+                    <div className="flex gap-x-2 sm:gap-x-6 items-center">
                         <div className="sm:text-2xl text-lg text-amber-200">See All</div>
                         <img src={arrowRight} alt="arrow-right" className="size-6" />
                     </div>
