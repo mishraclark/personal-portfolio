@@ -1,21 +1,33 @@
 import { Link } from 'react-router'
 import HeaderNavLink from "~/components/HeaderNavLink";
+import React from "react";
+import aboutIcon from "~/assets/identification.svg";
+import contactIcon from "~/assets/envelope.svg";
+import portfolioIcon from "~/assets/rectangle-stack.svg";
+import servicesIcon from "~/assets/computer-desktop.svg";
+import portraitIcon from "~/assets/portrait-icon.png";
 
-export default function Header() {
+const Header: React.FC<{mode?: "light" | "dark" }> = ({ mode = "dark"}) => {
     return (
-        <div className="flex justify-center md:justify-between w-full items-center z-20">
+        <div className="flex justify-between w-full items-center z-20">
             <Link to="/">
-                <span className="max-[768px]:hidden text-3xl font-bold text-white">
-                    Mishra
-                </span>
+                <div className="flex flex-col gap-y-2 items-center">
+                    <img src={portraitIcon} className="size-10" />
+                    <span className={`max-sm:hidden text-3xl font-bold ${mode == 'dark' ? 'text-white' : 'text-slate-700'}`}>
+                        Mishra
+                    </span>
+                </div>
+
             </Link>
 
-            <div className="flex gap-6 md:gap-10 text-white md:text-lg">
-                <HeaderNavLink to="/services" title="Services" />
-                <HeaderNavLink to="/portfolio" title="Portfolio" />
-                <HeaderNavLink to="/contact" title="Contact" />
-                <HeaderNavLink to="/about" title="About" />
+            <div className={`flex gap-6 md:gap-10 font-semibold md:text-lg ${mode == 'dark' ? 'text-white' : 'text-slate-700'}`}>
+                <HeaderNavLink to="/services" title="Services" icon={servicesIcon} />
+                <HeaderNavLink to="/portfolio" title="Portfolio" icon={portfolioIcon} />
+                <HeaderNavLink to="/contact" title="Contact" icon={contactIcon} />
+                <HeaderNavLink to="/about" title="About" icon={aboutIcon} />
             </div>
         </div>
     );
 }
+
+export default Header;
