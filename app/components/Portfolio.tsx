@@ -1,11 +1,11 @@
-import arrowRight from '~/assets/arrow-right.svg';
+import ArrowRight from '~/assets/arrow-right.svg?react';
 import PortfolioBlock from "~/components/PortfolioBlock";
 import directMessage from "~/assets/direct-message.png";
-import wallet from "~/assets/wallet.png";
+import wallet from "~/assets/group-2.png";
 import mapPins from "~/assets/map-pins.png";
 import calaxyProfile from "~/assets/calaxy-profile.png";
-import calaxyFeed from "~/assets/calaxy-feed.png";
-import riverPortfolio from "~/assets/river-portfolio.png";
+import calaxyFeed from "~/assets/group-3.png";
+import riverPortfolio from "~/assets/group-1.png";
 import { Link } from 'react-router'
 
 export default function Portfolio() {
@@ -20,7 +20,7 @@ export default function Portfolio() {
                 <Link to="/portfolio">
                     <div className="flex gap-x-2 sm:gap-x-6 items-center">
                         <div className="sm:text-2xl text-lg text-amber-200">See All</div>
-                        <img src={arrowRight} alt="arrow-right" className="size-6" />
+                        <ArrowRight className="size-6 text-amber-200" />
                     </div>
                 </Link>
 

@@ -18,9 +18,9 @@ export default function Services() {
             </div>
 
             <div className="flex flex-col gap-y-7 max-[1440px]:w-full">
-                <ServicePanel title="Website Design" img={webDesign} />
-                <ServicePanel title="Mobile Applications" img={appDesign} />
-                <ServicePanel title="Blockchain Integration" img={blockchain} />
+                <ServicePanel title="Website Design" img={webDesign} to="/services#1" />
+                <ServicePanel title="Mobile Applications" img={appDesign} to="/services#2" />
+                <ServicePanel title="Blockchain Integration" img={blockchain} to="/services#3" />
             </div>
 
         </div>

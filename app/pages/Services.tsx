@@ -26,7 +26,7 @@ export default function Services() {
 
                 <div className="grid lg:grid-cols-2 mt-40 lg:mt-80 gap-x-10 gap-y-10 lg:gap-y-100 items-center text-center">
 
-                    <div className="flex flex-col gap-10 lg:text-end">
+                    <div  className="flex flex-col gap-10 lg:text-end">
                         <div className="text-white text-4xl font-semibold">Website Design</div>
 
                         <div className="text-zinc-500 xl:text-2xl">
@@ -34,7 +34,7 @@ export default function Services() {
                         </div>
                     </div>
 
-                    <div className="overflow-clip rounded-3xl">
+                    <div id="1" className="overflow-clip rounded-3xl">
                         <img src={webDesign2} />
                     </div>
 
@@ -50,7 +50,7 @@ export default function Services() {
                         </div>
                     </div>
 
-                    <div className="overflow-clip rounded-3xl">
+                    <div id="2" className="overflow-clip rounded-3xl">
                         <img src={appDesign2} />
                     </div>
 
@@ -63,7 +63,7 @@ export default function Services() {
                         </div>
                     </div>
 
-                    <div className="overflow-clip rounded-3xl">
+                    <div id="3" className="overflow-clip rounded-3xl">
                         <img src={blockchain2} />
                     </div>
 

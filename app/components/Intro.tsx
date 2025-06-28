@@ -1,5 +1,5 @@
 import portrait from "~/assets/portrait.jpeg";
-import arrowRight from '~/assets/arrow-right.svg'
+import ArrowRight from '~/assets/arrow-right.svg?react'
 import IntroBlock from "~/components/IntroBlock";
 import { Link } from "react-router";
 
@@ -28,7 +28,7 @@ export default function Intro() {
                     <Link to="/contact">
                         <div className="text-amber-200 text-xl mt-8 md:mt-15 flex items-center cursor-pointer">
                             <span>Let's talk</span>
-                            <img src={arrowRight} className="size-[24px] ml-20" />
+                            <ArrowRight className="size-[24px] ml-20 text-amber-200" />
                         </div>
                     </Link>
                 </div>

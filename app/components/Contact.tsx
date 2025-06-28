@@ -1,4 +1,4 @@
-import arrowRight from '~/assets/arrow-right.svg'
+import ArrowRight from '~/assets/arrow-right.svg?react'
 import simpleProducts from '~/assets/simple-products.png'
 import { Link } from "react-router";
 
@@ -16,7 +16,7 @@ export default function Contact() {
                         <div className="text-amber-200 text-2xl">Contact Me</div>
                     </div>
 
-                    <img src={arrowRight} alt="arrow-right" className="size-8" />
+                    <ArrowRight className="size-8 text-amber-200" />
                 </div>
             </Link>
         </div>
