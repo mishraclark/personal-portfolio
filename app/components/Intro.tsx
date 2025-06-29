@@ -1,4 +1,4 @@
-import portrait from "~/assets/portrait.jpeg";
+import portrait from "~/assets/stardew-portrait.png";
 import ArrowRight from '~/assets/arrow-right.svg?react'
 import IntroBlock from "~/components/IntroBlock";
 import { Link } from "react-router";

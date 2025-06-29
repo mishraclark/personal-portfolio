@@ -1,6 +1,7 @@
 import React from 'react';
 import Background from "~/components/Background";
 import Header from "~/components/Header";
+import Footer from "~/components/Footer";
 
 export default function Page(props: { children?: React.ReactNode, mode?: "light" | "dark"}) {
     return (
@@ -11,6 +12,8 @@ export default function Page(props: { children?: React.ReactNode, mode?: "light"
                 <Header mode={props.mode} />
 
                 {props.children}
+
+                <Footer />
             </div>
         </main>
     );
