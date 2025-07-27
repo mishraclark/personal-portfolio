@@ -11,6 +11,6 @@ export default function ContactDialog(props: {open?: boolean, onClose?: () => vo
         
                 </div>
             </div> 
-        : null // Placeholder for dialog visibility logic
+        : null
     );
 }
