@@ -5,7 +5,7 @@ import aboutIcon from "~/assets/identification.svg";
 import contactIcon from "~/assets/envelope.svg";
 import portfolioIcon from "~/assets/rectangle-stack.svg";
 import servicesIcon from "~/assets/computer-desktop.svg";
-import portraitIcon from "~/assets/stardew-portrait-icon.png";
+import portraitIcon from "~/assets/portrait4-icon.png";
 
 const Header: React.FC<{mode?: "light" | "dark" }> = ({ mode = "dark"}) => {
     return (

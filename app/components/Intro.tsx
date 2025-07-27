@@ -1,9 +1,10 @@
-import portrait from "~/assets/stardew-portrait.png";
+import portrait from "~/assets/portrait4.jpeg";
 import ArrowRight from '~/assets/arrow-right.svg?react'
 import IntroBlock from "~/components/IntroBlock";
 import { Link } from "react-router";
 
-export default function Intro() {
+export default function Intro(props: {onOpenDialog: () => void}) {
+
     return (
         <div className="flex flex-col">
             <div className="flex lg:max-xl:flex-col md:max-lg:flex-row mt-10 md:mt-[92px] justify-between">
@@ -28,13 +29,16 @@ export default function Intro() {
                         Interested in launching a new product, or
                         elevating an existing one? I'm happy to help.
                     </div>
-  
-                    <Link to="/contact">
-                        <div className="text-amber-200 text-xl mt-8 md:mt-15 flex items-center cursor-pointer">
-                            <span>Let's talk</span>
-                            <ArrowRight className="size-[24px] ml-20 text-amber-200" />
-                        </div>
-                    </Link>
+                    
+                    <div className="flex gap-4 mt-8 md:mt-10">
+                        <button type="button" className="pointer-events-auto cursor-pointer px-6 py-3 text-white bg-slate-900 border border-slate-700 rounded-xl" onClick={props.onOpenDialog}>
+                            Contact  
+                        </button>
+                        <button className="px-6 py-3 text-amber-200 bg-slate-900 border border-amber-200 rounded-xl">
+                            Download CV  
+                        </button>
+                    </div>
+
                 </div>
 
                     <div className="min-[1400px]:right-[380px] md:hidden lg:flex lg:absolute right-16 md:w-[510px] max-[768px]:mt-8 overflow-clip rounded-3xl">
