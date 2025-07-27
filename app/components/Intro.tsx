@@ -1,9 +1,27 @@
 import portrait from "~/assets/portrait4.jpeg";
-import ArrowRight from '~/assets/arrow-right.svg?react'
 import IntroBlock from "~/components/IntroBlock";
-import { Link } from "react-router";
 
 export default function Intro(props: {onOpenDialog: () => void}) {
+
+function downloadForIOS() {
+  const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+  const link = document.createElement('a');
+  
+  if (isIOS) {
+    // Open in new tab for iOS
+    link.href = 'app/documents/MishraClarkResume.pdf';
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+  } else {
+    // Normal download for others
+    link.href = 'app/documents/MishraClarkResume.pdf';
+    link.download = 'MishraClarkResume.pdf';
+  }
+  
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
 
     return (
         <div className="flex flex-col">
@@ -34,11 +52,11 @@ export default function Intro(props: {onOpenDialog: () => void}) {
                         <button type="button" className="pointer-events-auto cursor-pointer px-6 py-3 text-white bg-slate-900 border border-slate-700 rounded-xl" onClick={props.onOpenDialog}>
                             Contact  
                         </button>
-                        <a href="app/documents/MishraClarkResume.pdf" download="MishraClarkResume.pdf" className="pointer-events-auto cursor-pointer">
+                        <button type="button" onClick={downloadForIOS} className="pointer-events-auto cursor-pointer">
                             <div className="px-6 py-3 text-amber-200 bg-slate-900 border border-amber-200 rounded-xl">
                                 Download CV  
                             </div>
-                        </a>
+                        </button>
                     </div>
 
                 </div>
