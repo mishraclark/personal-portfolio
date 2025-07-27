@@ -4,6 +4,7 @@ import Services from '~/components/Services'
 import Portfolio from '~/components/Portfolio'
 import Testimonials from '~/components/Testimonials'
 import Contact from '~/components/Contact'
+// import Skills from '~/components/Skills';
 import Page from "~/layouts/Page";
 
 export function Welcome() {
@@ -11,6 +12,8 @@ export function Welcome() {
       <Page children={
           <>
               <Intro />
+
+              {/* <Skills /> */}
 
               <Clients/>
 
