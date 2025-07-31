@@ -47,20 +47,20 @@ export default function Skills() {
                 <SkillBlock title={'Vue.js'} icon={Vue}/>
                 <SkillBlock title={'Nuxt.js'} icon={Nuxt}/>
                 <SkillBlock title={'React.js'} icon={React}/>
-                <SkillBlock title={'Angular'} icon={Angular} />
+                {/* <SkillBlock title={'Angular'} icon={Angular} /> */}
                 <SkillBlock title={'Tailwind'} icon={Tailwind}/>
                 <SkillBlock title={'Flutter'} icon={Flutter}/>
                 <SkillBlock title={'Spring Boot'} icon={SpringBoot}/>
                 <SkillBlock title={'.NET'} icon={Database}/>
-                <SkillBlock title={'Node.js'} icon={Nodejs}/>
+                {/* <SkillBlock title={'Node.js'} icon={Nodejs}/> */}
                 <SkillBlock title={'Web3.js'} icon={Bitcoin}/>
                 <SkillBlock title={'Solana'} icon={Solana}/>
                 <SkillBlock title={'Hedera'} icon={Hedera}/>
-                <SkillBlock title={'Base'} icon={Base}/>
+                {/* <SkillBlock title={'Base'} icon={Base}/> */}
                 <SkillBlock title={'Storybook'} icon={BookOpen}/>
                 <SkillBlock title={'Cypress'} icon={ClipboardCheck}/>
-                <SkillBlock title={'Jest'} icon={ClipboardCheck}/>
-                <SkillBlock title={'Docker'} icon={LaptopFile}/>
+                {/* <SkillBlock title={'Jest'} icon={ClipboardCheck}/> */}
+                {/* <SkillBlock title={'Docker'} icon={LaptopFile}/> */}
                 <SkillBlock title={'Git'} icon={CodeMerge}/>
 </div>
             </div>

@@ -11,6 +11,8 @@ const Background: React.FC<{mode?: "light" | "dark" }> = ({ mode = "dark"}) =>  
             <img src={vector2} alt="vector-2" className="absolute top-[640px] -left-10" />
             <img src={vector3} alt="vector-3" className="absolute top-[1728px] right-10" />
             <img src={vector4} alt="vector-4" className="absolute top-[3140px] -left-10" />
+            <img src={vector2} alt="vector-2" className="absolute top-[5440px] -left-10" />
+            <img src={vector3} alt="vector-3" className="absolute top-[6728px] right-10" />
         </div>
     );
 }

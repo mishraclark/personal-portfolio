@@ -21,9 +21,9 @@ export default function Intro(props: {onOpenDialog: () => void}) {
                     <div className="bg-amber-200 h-2 w-[183px] mt-8"/>
 
                     <div className="text-zinc-500 mt-6 md:mt-10 md:w-[356px] md:text-xl">
-                        I am a Senior Software Engineer with a passion for building both web2 and web3 applications. From small
-                        business websites to enterprise applications, I excell at building
-                        solutions that are high speed, scalable, and secure. 
+                        I am a Senior Software Engineer specializing in React, Vue.js, and Web3 development. From small
+                        business websites to enterprise fintech applications, I excell at building
+                        solutions that are high-performance, user-centric, and secure. 
                         <br />
                         <br />
                         Interested in launching a new product, or

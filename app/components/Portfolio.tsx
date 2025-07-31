@@ -15,11 +15,11 @@ export default function Portfolio() {
             <div className="flex-col z-30">
                 <div className="flex justify-between items-center">
                     <div className="flex text-white text-2xl sm:text-3xl md:text-6xl font-bold">
-                        My Portfolio
+                        Portfolio
                     </div>
                 <Link to="/portfolio">
                     <div className="flex gap-x-2 sm:gap-x-6 items-center">
-                        <div className="sm:text-2xl text-lg text-amber-200">See All</div>
+                        <div className="sm:text-2xl text-lg text-amber-200">See Details</div>
                         <ArrowRight className="size-6 text-amber-200" />
                     </div>
                 </Link>

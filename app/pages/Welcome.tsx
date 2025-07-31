@@ -4,10 +4,12 @@ import Services from '~/components/Services'
 import Portfolio from '~/components/Portfolio'
 import Testimonials from '~/components/Testimonials'
 import Contact from '~/components/Contact'
-// import Skills from '~/components/Skills';
 import Page from "~/layouts/Page";
 import React, { useState } from 'react';
 import ContactDialog from '~/components/ContactDialog'
+import About from '~/components/About'
+import SkillsList from '~/components/SkillsList'
+import ContactDialogForm from '~/components/ContactDialogForm'
 
 export function Welcome() {
     const [dialogOpen, setDialogOpen] = React.useState(false);
@@ -28,17 +30,19 @@ export function Welcome() {
           <>
               <Intro onOpenDialog={handleOpenDialog} />
 
-              {/* <Skills /> */}
+                <Clients/>
 
-              <Clients/>
+              <About />
 
-              <Services/>
+              <SkillsList />
+
+              {/* <Services/> */}
 
               <Portfolio />
 
-              <Testimonials />
+              {/* <Testimonials /> */}
 
-              <Contact />
+              <Contact onOpenDialog={handleOpenDialog} />
 
               <ContactDialog open={dialogOpen} onClose={handleCloseDialog} />
           </>
