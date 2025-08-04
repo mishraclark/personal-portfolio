@@ -9,7 +9,7 @@ export default function About() {
             {/* <img src={simpleScalable} className="absolute -left-1 scale-155 blur-md w-max top-30 md:top-40 lg:top-120 -z-1 transform -rotate-3" /> */}
 
 
-        <div className="flex flex-col z-20 items-center justify-center w-full mt-40 py-40 px-4 text-white lg:w-1/2">
+        <div className="flex flex-col z-20 items-center justify-center w-full xl:mt-40 py-40 px-4 text-white lg:w-1/2">
             <h1 className="text-3xl md:text-5xl text-center font-bold mb-6">Professional Summary</h1>
             <p className="text-lg md:text-xl max-w-2xl text-center mb-8">
                 Senior Frontend Engineer & Team Lead with expertise in React, Vue.js, and Web3 development, blending technical mastery with leadership in fast-growth environments. 
@@ -40,7 +40,7 @@ export default function About() {
                     <li>Built diverse applications at LaunchBadge (2021-2023):</li>
                     <ul className="list-disc pl-6">
                         <li>Web3: Developed wallets, nft minters, and token auction platforms</li>
-                        <li>Web2: Created mobile responsive small buisness sites</li>
+                        <li>Web2: Created mobile responsive small business sites</li>
                         <li>Mobile: Launched a mobile application for iOS and Android</li>
                     </ul>
                 </ul>

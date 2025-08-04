@@ -57,7 +57,7 @@ export default function Intro(props: {onOpenDialog: () => void}) {
                 </div>
             </div>
 
-            <div className="hidden md:flex lg:hidden mt-10 mx-16 z-20 overflow-clip rounded-3xl">
+            <div className="hidden md:flex lg:hidden mt-10 md:mt-20 mx-16 z-20 overflow-clip rounded-3xl">
                 <img src={portrait} alt="portrait" className="object-cover" />
             </div>
 

@@ -1,6 +1,6 @@
 export default function PortfolioBlock(props:{title: string, subTitle: string, img: string}) {
     return (
-      <div className="flex flex-col w-full h-[384px]">
+      <div className="flex flex-col w-full h-[384px] cursor-pointer">
           <div className="w-full flex overflow-clip items-center justify-center rounded-2xl h-[270px] bg-zinc-600">
               <img src={props.img} alt="" className="ml-2 object-center w-11/12" />
           </div>
