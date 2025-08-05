@@ -1,13 +1,10 @@
 import calaxyIcon from '~/assets/calaxy-app-icon@3x.png';
 import launchbadgeIcon from '~/assets/launchbadge-icon.png';
 import mishraClarkIcon from '~/assets/portrait4-icon-square.png';
-import simpleScalable from "~/assets/simple-scalable-2.png";
 
 export default function About() {
     return (
         <div id="about" className="flex relative w-full items-center justify-center">
-            {/* <img src={simpleScalable} className="absolute -left-1 scale-155 blur-md w-max top-30 md:top-40 lg:top-120 -z-1 transform -rotate-3" /> */}
-
 
         <div className="flex flex-col z-20 items-center justify-center w-full xl:mt-40 py-40 px-4 text-white lg:w-1/2">
             <h1 className="text-3xl md:text-5xl text-center font-bold mb-6">Professional Summary</h1>

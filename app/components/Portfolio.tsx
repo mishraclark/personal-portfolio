@@ -1,12 +1,9 @@
 import ArrowRight from '~/assets/arrow-right.svg?react';
-import PortfolioBlock from "~/components/PortfolioBlock";
 import directMessage from "~/assets/calaxy18p1.png";
 import wallet from "~/assets/group-2.png";
 import mapPins from "~/assets/map-pins.png";
-import calaxyProfile from "~/assets/calaxy-profile.png";
 import calaxyFeed from "~/assets/group-3.png";
 import riverPortfolio from "~/assets/group-1.png";
-import { Link } from 'react-router'
 import { useState } from 'react';
 import PortfolioSlide from "~/components/PortfolioSlide";
 import ArrowLeft from '~/assets/arrow-left.svg?react';
