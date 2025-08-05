@@ -6,11 +6,22 @@ import contactIcon from "~/assets/envelope.svg";
 import portfolioIcon from "~/assets/rectangle-stack.svg";
 import servicesIcon from "~/assets/computer-desktop.svg";
 import portraitIcon from "~/assets/portrait4-icon.png";
+import { useScrollPosition } from "~/hooks/useScrollPosition";
 
 const Header: React.FC<{mode?: "light" | "dark" }> = ({ mode = "dark"}) => {
+    
+    const scrollY = useScrollPosition();
+
+    const scrollToTop = () => {
+        window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+};
+
     return (
-        <div className="flex justify-between w-full items-center z-20">
-            <Link to="/">
+        <div className={`flex z-[1000] top-0 max-md:inset-x-5 max-[1400px]:inset-x-16 min-[1400px]:inset-x-32 justify-between items-center border-zinc-500 ${scrollY > 20 && 'fixed bg-slate-950 border'} px-5 py-3 rounded-b-lg transition-all duration-300`}>
+            <div onClick={scrollToTop} className="cursor-pointer">
                 <div className="flex flex-col gap-y-2 items-center">
                     <img src={portraitIcon} className="size-10" />
                     <span className={`max-sm:hidden text-3xl font-bold ${mode == 'dark' ? 'text-white' : 'text-slate-700'}`}>
@@ -18,13 +29,13 @@ const Header: React.FC<{mode?: "light" | "dark" }> = ({ mode = "dark"}) => {
                     </span>
                 </div>
 
-            </Link>
+            </div>
 
             <div className={`flex gap-6 md:gap-10 font-semibold md:text-lg ${mode == 'dark' ? 'text-white' : 'text-slate-700'}`}>
-                <HeaderNavLink to="/services" title="Services" icon={servicesIcon} />
-                <HeaderNavLink to="/portfolio" title="Portfolio" icon={portfolioIcon} />
-                <HeaderNavLink to="/contact" title="Contact" icon={contactIcon} />
-                <HeaderNavLink to="/about" title="About" icon={aboutIcon} />
+                <HeaderNavLink to="about" title="About" icon={aboutIcon} />
+                <HeaderNavLink to="skills" title="Skills" icon={servicesIcon} />
+                <HeaderNavLink to="portfolio" title="Portfolio" icon={portfolioIcon} />
+                <HeaderNavLink to="contact" title="Contact" icon={contactIcon} />
             </div>
         </div>
     );

@@ -27,7 +27,7 @@ import Tailwind from '~/assets/tailwind.svg?react';
 
 export default function SkillsList() {
     return (
-        <div className="flex flex-col relative p-10 mt-10 lg:mt-[120px]">
+        <div id="skills" className="flex flex-col relative p-10 mt-10 lg:mt-[120px]">
             <div className="absolute inset-0 bg-slate-950 opacity-60"></div>
             <div className="flex-col z-30">
                 <div className="flex justify-center items-center">

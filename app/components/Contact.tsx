@@ -1,6 +1,6 @@
 export default function Contact(props: {onOpenDialog: () => void}) {
     return (
-      <div className="flex flex-col mt-40 lg:mt-[100px] py-20 px-10 items-center text-center">
+      <div id="contact" className="flex flex-col mt-40 lg:mt-[100px] py-20 px-10 items-center text-center">
 
         <div className='flex flex-col items-center justify-center text-white max-w-120'>
             <h1 className='text-white text-4xl md:text-6xl font-semibold mb-10'>

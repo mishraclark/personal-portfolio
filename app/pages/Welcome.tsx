@@ -10,6 +10,8 @@ import ContactDialog from '~/components/ContactDialog'
 import About from '~/components/About'
 import SkillsList from '~/components/SkillsList'
 import ContactDialogForm from '~/components/ContactDialogForm'
+import { useRef } from 'react';
+
 export function Welcome() {
     const [dialogOpen, setDialogOpen] = React.useState(false);
 
@@ -21,7 +23,6 @@ export function Welcome() {
     function handleCloseDialog() {
         setDialogOpen(false);
     }
-
 
 
   return (

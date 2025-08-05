@@ -5,7 +5,7 @@ import simpleScalable from "~/assets/simple-scalable-2.png";
 
 export default function About() {
     return (
-        <div className="flex relative w-full items-center justify-center">
+        <div id="about" className="flex relative w-full items-center justify-center">
             {/* <img src={simpleScalable} className="absolute -left-1 scale-155 blur-md w-max top-30 md:top-40 lg:top-120 -z-1 transform -rotate-3" /> */}
 
 

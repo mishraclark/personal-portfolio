@@ -116,7 +116,7 @@ export default function Portfolio() {
             <div className="absolute inset-0 bg-slate-950 opacity-60"></div>
             <div className="flex-col z-30">
                 <div className="flex justify-between items-center mb-10">
-                    <div className="flex text-white text-2xl sm:text-3xl md:text-6xl font-bold">
+                    <div id="portfolio" className="flex text-white text-2xl sm:text-3xl md:text-6xl font-bold">
                         Recent Work
                     </div>
 
