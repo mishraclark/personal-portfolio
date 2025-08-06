@@ -1,15 +1,21 @@
 import portrait from "~/assets/portrait4.jpeg";
-import ArrowRight from '~/assets/arrow-right.svg?react'
 import IntroBlock from "~/components/IntroBlock";
-import { Link } from "react-router";
 import { useScrollPosition } from "~/hooks/useScrollPosition";
+import { useWindowSize } from "~/hooks/useWindowSize";
+import { useMemo } from "react";
 
 export default function Intro(props: {onOpenDialog: () => void}) {
     const scrollY = useScrollPosition();
 
+    const windowSize = useWindowSize();
+
+    const headerOffset = useMemo(() => {
+            return windowSize.width > 768 ? 40 : 20;
+        }, [windowSize.width]);
+
     return (
         <div className="flex flex-col">
-            <div className={`flex lg:max-xl:flex-col md:max-lg:flex-row mt-10 md:mt-[92px] justify-between ${scrollY > 40 ? 'md:mt-[200px]' : 'mt-10 md:mt-[92px]'}`}>
+            <div className={`flex lg:max-xl:flex-col md:max-lg:flex-row md:mt-[92px] justify-between ${scrollY > headerOffset ? 'mt-[104px] md:mt-[200px]' : 'mt-10 md:mt-[92px]'}`}>
                 <div className="flex max-[1400px]:flex-col">
                 <div className="flex flex-col z-100 text-center items-center md:items-start md:text-left">
                     <div className="text-xl md:text-4xl text-zinc-400">

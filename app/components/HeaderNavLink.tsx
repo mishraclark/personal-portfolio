@@ -1,11 +1,7 @@
-import { Link } from 'react-router';
-
 export default function HeaderNavLink(props: {to: string, title: string, icon: string}) {
     const scrollToId = (id: string) => {
       const element = document.getElementById(id);
       if (element) {
-              console.log(`Scrolling to ${id}`);
-
         element.scrollIntoView({ behavior: 'smooth' });
       }
     };
