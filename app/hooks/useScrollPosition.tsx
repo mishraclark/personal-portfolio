@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
 export function useScrollPosition() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -12,10 +12,10 @@ export function useScrollPosition() {
     updatePosition();
 
     // Add scroll event listener
-    window.addEventListener('scroll', updatePosition);
+    window.addEventListener("scroll", updatePosition);
 
     // Cleanup
-    return () => window.removeEventListener('scroll', updatePosition);
+    return () => window.removeEventListener("scroll", updatePosition);
   }, []); // Empty dependency array = runs once on mount
 
   return scrollPosition;
