@@ -18,6 +18,7 @@
     "@emailjs/browser": "^4.4.1",
     "@react-router/node": "^7.5.3",
     "@react-router/serve": "^7.5.3",
+    "eslint": "^9.33.0",
     "isbot": "^5.1.27",
     "oxlint": "^1.11.1",
     "prettier": "^3.6.2",
